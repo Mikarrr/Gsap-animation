@@ -75,3 +75,81 @@ document.querySelectorAll(".square").forEach(function (square) {
     });
   });
 });*/
+
+gsap.registerPlugin(ScrollTrigger);
+
+const Square = document.querySelectorAll(".main_container2");
+
+Square.forEach((section) => {
+  gsap.fromTo(
+    section.children,
+    { y: "+50", opacity: 0 },
+    {
+      y: 0,
+      opacity: 1,
+      stagger: 0.5,
+      duration: 6,
+      ease: "ease-in-out",
+      scrollTrigger: {
+        trigger: section,
+        start: "center 70%",
+        end: "center 70%",
+        markers: true,
+        scrub: 5,
+      },
+    }
+  );
+});
+
+gsap.to(".box", {
+  borderRadius: 100,
+  duration: 1,
+  y: -100,
+  ease: "power1",
+  yoyo: true,
+  repeat: -1,
+  stagger: {
+    amount: 4,
+    each: 0.5,
+    from: 0,
+  },
+});
+
+let play = document.querySelector(".play");
+let pause = document.querySelector(".pause");
+let restart = document.querySelector(".restart");
+
+let tween = gsap.to(".box1", {
+  y: -200,
+  duration: 5,
+  backgroundColor: "teal",
+});
+
+play.addEventListener("click", () => tween.play());
+pause.addEventListener("click", () => tween.pause());
+restart.addEventListener("click", () => tween.restart());
+
+const CircleBox = document.querySelectorAll(".circle-box ");
+const MainContainer5 = document.querySelectorAll(".main_container5");
+
+CircleBox.forEach((section) => {
+  gsap.fromTo(
+    section,
+    { x: "-600" },
+    {
+      x: 600,
+      stagger: 0.5,
+      duration: 0.5,
+      rotate: 360,
+      borderRadius: 200,
+      ease: "ease-in-out",
+      scrollTrigger: {
+        trigger: MainContainer5,
+        start: "35% 70%",
+        end: "90% 70%",
+        markers: true,
+        scrub: 2,
+      },
+    }
+  );
+});
