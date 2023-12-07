@@ -153,3 +153,17 @@ CircleBox.forEach((section) => {
     }
   );
 });
+
+const MainContainer6 = document.querySelector(".main_container6");
+const divs = gsap.utils.toArray(".main_container6 div");
+
+let scrollTwin = gsap.to(divs, {
+  xPercent: -100 * (divs.length - 1),
+  ease: "none",
+  scrollTrigger: {
+    trigger: MainContainer6,
+    pin: true,
+    scrub: 1,
+    end: "+=3000",
+  },
+});

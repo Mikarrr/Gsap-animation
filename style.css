@@ -103,3 +103,29 @@ button {
   background: black;
   border-top-right-radius: 40px;
 }
+
+.main_container6 {
+  display: flex;
+
+  width: 300vw;
+  height: 100vh;
+}
+.con1,
+.con2,
+.con3 {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+}
+
+.con1 {
+  background-color: aqua;
+}
+
+.con2 {
+  background-color: aquamarine;
+}
+
+.con3 {
+  background-color: blueviolet;
+}
