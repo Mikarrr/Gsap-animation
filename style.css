@@ -129,3 +129,93 @@ button {
 .con3 {
   background-color: blueviolet;
 }
+
+.main_container10 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: chartreuse;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.def {
+  height: 100vh;
+  width: 25vw;
+}
+.def1 {
+  background-color: aqua;
+}
+
+.def2 {
+  background-color: aquamarine;
+}
+
+.def3 {
+  background-color: blueviolet;
+}
+
+.def4 {
+  background-color: crimson;
+}
+.main_container11 {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  grid-template-rows: repeat(2, 50vh);
+  justify-content: center;
+  align-items: center;
+  background-color: blue;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+.deff {
+  height: 50vh;
+  width: 25vw;
+}
+.main_container12 {
+  display: flex;
+  width: 300vw;
+  height: 100vh;
+}
+.box {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+.box h2 {
+  font-size: 120px;
+}
+.main_container13 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: blue;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+.main_div,
+.main_div_sec {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+}
+
+.main_div {
+  background-color: azure;
+}
+
+.main_div_sec {
+  background-color: blueviolet;
+}

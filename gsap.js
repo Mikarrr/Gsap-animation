@@ -94,7 +94,7 @@ Square.forEach((section) => {
         trigger: section,
         start: "center 70%",
         end: "center 70%",
-        markers: true,
+        markers: false,
         scrub: 5,
       },
     }
@@ -147,7 +147,7 @@ CircleBox.forEach((section) => {
         trigger: MainContainer5,
         start: "35% 70%",
         end: "90% 70%",
-        markers: true,
+        markers: false,
         scrub: 2,
       },
     }
@@ -166,4 +166,28 @@ let scrollTwin = gsap.to(divs, {
     scrub: 1,
     end: "+=3000",
   },
+});
+
+const MainContainer10 = document.querySelector(".main_container10");
+const defs = document.querySelectorAll(".main_container10");
+
+defs.forEach((section) => {
+  gsap.fromTo(
+    section.children,
+    {
+      y: "+=500",
+    },
+    {
+      y: 0,
+
+      stagger: 0.5,
+      ease: "none",
+      scrollTrigger: {
+        trigger: MainContainer10,
+        pin: true,
+        scrub: 1,
+        end: "110vh",
+      },
+    }
+  );
 });
