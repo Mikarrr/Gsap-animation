@@ -1,43 +1,43 @@
-# Projekt Animacji GSAP
+# GSAP Animation Project
 
-## Spis treści
+## Table of Contents
 
-1. [Opis projektu](#opis-projektu)
-2. [Instrukcja uruchomienia](#instrukcja-uruchomienia)
-3. [Animacje](#animacje)
-4. [Struktura plików](#struktura-plików)
-5. [Zależności](#zależności)
+1. [Project Description](#project-description)
+2. [Running Instructions](#running-instructions)
+3. [Animations](#animations)
+4. [File Structure](#file-structure)
+5. [Dependencies](#dependencies)
 
-## Opis projektu
+## Project Description
 
-Repozytorium zawiera prostą stronę internetową z animacjami stworzonymi przy użyciu biblioteki GSAP.
+The repository contains a simple web page with animations created using the GSAP library.
 
-## Instrukcja uruchomienia
+## Running Instructions
 
-1. Sklonuj to repozytorium na swój lokalny komputer.
-2. Otwórz plik `index.html` w przeglądarce internetowej.
+1. Clone this repository to your local machine.
+2. Open the `index.html` file in a web browser.
 
-## Animacje
+## Animations
 
-Projekt zawiera różne animacje zaimplementowane przy użyciu GSAP. Poniżej znajduje się krótki opis każdej animacji:
+The project contains various animations implemented using GSAP. Below is a brief description of each animation:
 
-- **Animacje w sekcji "main_container2":** Animacje dla kwadratów przy użyciu efektu przewijania.
-- **Animacje w sekcji "main_container4":** Animacja przycisku "Play", "Pause", "Restart" dla kwadratu.
-- **Animacje w sekcji "main_container5":** Animacja okręgu przy użyciu przewijania.
-- **Animacje w sekcji "main_container6":** Animacje dla trzech kontenerów.
-- **Animacje w sekcji "main_container10":** Animacje dla bloków w pionie przy użyciu przewijania.
-- **Animacje w sekcji "main_container11":** Animacje dla bloków w siatce.
-- **Animacje w sekcji "main_container13":** Animacje dla dwóch głównych kontenerów.
+- **Animations in "main_container2" section:** Animations for squares using scrolling effect.
+- **Animations in "main_container4" section:** Animation for the "Play", "Pause", "Restart" button for the square.
+- **Animations in "main_container5" section:** Animation for the circle using scrolling.
+- **Animations in "main_container6" section:** Animations for three containers.
+- **Animations in "main_container10" section:** Animations for vertical blocks using scrolling.
+- **Animations in "main_container11" section:** Animations for grid blocks.
+- **Animations in "main_container13" section:** Animations for two main containers.
 
-## Struktura plików
+## File Structure
 
-- `index.html` - Plik główny HTML.
-- `style.css` - Arkusz stylów.
-- `gsap.js` - Skrypt GSAP zdefiniowany w pliku JavaScript.
+- `index.html` - Main HTML file.
+- `style.css` - Stylesheet.
+- `gsap.js` - GSAP script defined in JavaScript file.
 
-## Zależności
+## Dependencies
 
-Projekt korzysta z biblioteki GSAP w wersji 3.12.3, której skrypty są załadowane z CDN.
+The project relies on the GSAP library version 3.12.3, whose scripts are loaded from CDN.
 
 ```html
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/gsap.min.js"></script>
